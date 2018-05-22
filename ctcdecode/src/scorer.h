@@ -13,7 +13,7 @@
 
 #include "path_trie.h"
 
-const double OOV_SCORE = -14;
+const double OOV_SCORE = -1000;
 const std::string START_TOKEN = "<s>";
 const std::string UNK_TOKEN = "<unk>";
 const std::string END_TOKEN = "</s>";
