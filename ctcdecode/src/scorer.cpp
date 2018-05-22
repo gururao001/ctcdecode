@@ -81,6 +81,7 @@ double Scorer::get_log_cond_prob(const std::vector<std::string>& words) {
     lm::WordIndex word_index = model->BaseVocabulary().Index(words[i]);
     // encounter OOV
     if (word_index == 0) {
+      printf("%f\n",OOV_SCORE)
       return OOV_SCORE;
     }
     cond_prob = model->BaseScore(&state, word_index, &out_state);
